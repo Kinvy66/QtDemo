@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>921</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QComboBox" name="com_url"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QCheckBox" name="checkHW">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>硬解码</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="btn_file">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>选择</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="btn_open">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>开始播放</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QPushButton" name="btn_pause">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>暂停</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="5">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="PlayImage" name="playImage_1" native="true"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="PlayImage" name="playImage_2" native="true"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="PlayImage" name="playImage_3" native="true"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="PlayImage" name="playImage_4" native="true"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="PlayImage" name="playImage_5" native="true"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="PlayImage" name="playImage_6" native="true"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="PlayImage" name="playImage_7" native="true"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="PlayImage" name="playImage_8" native="true"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="PlayImage" name="playImage_9" native="true"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlayImage</class>
+   <extends>QWidget</extends>
+   <header location="global">../FFmpegVideoPlay/PlayImage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
